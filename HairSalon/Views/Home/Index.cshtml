@@ -2,13 +2,13 @@
     Layout = "_Layout";
 }
 
-<h3>Search here</h3>
+<div class="row">
+    <div class="col-md-6">
+        <a href="/stylist/add" class="btn btn-default">Add A Stylist</a>
+    </div>
 
-<a href="/stylist/add">Add A Stylist</a>
-<a href="/stylists">View All Stylists</a>
-
-@if(@Model.Count > 0)
-{
-    <a href="/clients/add">Add A Client</a>
-}
+    <div class="col-md-6">
+        <a href="/stylists" class="btn btn-default">View All Stylists</a>
+    </div>
+</div>
 

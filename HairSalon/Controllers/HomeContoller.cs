@@ -98,7 +98,7 @@ namespace HairSalon.Controllers
             Client newClient = new Client(Request.Form["client-name"], id);
             newClient.Save();
 
-            model.Add("clients", Client.GetAll());
+            model.Add("clients", Stylist.Find(id).GetAllClients());
             model.Add("stylist", Stylist.Find(id));
 
             return View("StylistDetail", model);
