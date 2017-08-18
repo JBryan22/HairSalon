@@ -1,0 +1,13 @@
+@{
+    Layout = "_Layout";
+}
+
+
+<h2>Update Stylist</h2>
+
+<form action="/stylist/@Model.GetId()/update" method="post">
+    <label for="stylist-name">Name:</label>
+    <input type="text" name="stylist-name">
+
+    <button type="submit">Submit</button>
+</form>
